@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.AgeSelectionFragment">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How old are you?"
+            android:textColor="#D62C2C2C"
+            android:layout_below="@+id/logo"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/texttt"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texttt"
+            android:layout_above="@+id/bottomLayout"
+            android:id="@+id/layourrrrr"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AgePicker" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/bol"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:text="@string/textAddress"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_margin="20dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/forgotPassText"
+                android:focusable="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nunito"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="110dp"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/nextBtnInAgeSelection" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragment.WelcomeScreenFragment">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startJourny"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_pressed"
+            android:fontFamily="@font/nunito"
+            android:text="Start Journey"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+</layout>

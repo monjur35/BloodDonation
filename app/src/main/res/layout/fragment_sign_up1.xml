@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.SignUp1Fragment">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:id="@+id/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let us know about you"
+            android:textColor="#D62C2C2C"
+            android:layout_below="@+id/logo"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/texttt"
+            android:textStyle="bold"
+            android:textSize="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texttt"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layourrrrr"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:layout_marginStart="10dp"
+                android:text="@string/username" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_style"
+                android:hint="@string/name"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                android:id="@+id/userNameId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/texttttttt"
+                android:layout_marginStart="10dp"
+                android:text="@string/username_or_email" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_style"
+                android:hint="abc@gmail.com"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                android:id="@+id/userNameOrEmailIdFromLogIn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Password" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_style"
+                android:hint="Password"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:inputType="textPassword"
+                android:id="@+id/passwordFromLogIn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:text="Provide your real name for your identity.Your name will be used for search"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_margin="20dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/forgotPassText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nunito"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="110dp"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/nextBtnInSignUp1" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

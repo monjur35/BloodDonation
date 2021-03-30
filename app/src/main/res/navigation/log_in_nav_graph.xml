@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_in_nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.example.blooddonation.fragment.WelcomeScreenFragment"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.blooddonation.fragment.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUp1Fragment"
+            app:destination="@id/signUp1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp1Fragment"
+        android:name="com.example.blooddonation.fragment.SignUp1Fragment"
+        android:label="fragment_sign_up1"
+        tools:layout="@layout/fragment_sign_up1" >
+        <action
+            android:id="@+id/action_signUp1Fragment_to_signUp2Fragment"
+            app:destination="@id/signUp2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp2Fragment"
+        android:name="com.example.blooddonation.fragment.SignUp2Fragment"
+        android:label="fragment_sign_up2"
+        tools:layout="@layout/fragment_sign_up2" >
+        <action
+            android:id="@+id/action_signUp2Fragment_to_bloodGroupFragment"
+            app:destination="@id/bloodGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodGroupFragment"
+        android:name="com.example.blooddonation.fragment.BloodGroupFragment"
+        android:label="fragment_blood_group"
+        tools:layout="@layout/fragment_blood_group" >
+        <action
+            android:id="@+id/action_bloodGroupFragment_to_weightSelectFragment"
+            app:destination="@id/weightSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightSelectFragment"
+        android:name="com.example.blooddonation.fragment.WeightSelectFragment"
+        android:label="fragment_weight_select"
+        tools:layout="@layout/fragment_weight_select" >
+        <action
+            android:id="@+id/action_weightSelectFragment_to_genderSelecteionFragment"
+            app:destination="@id/genderSelecteionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderSelecteionFragment"
+        android:name="com.example.blooddonation.fragment.GenderSelecteionFragment"
+        android:label="fragment_gender_selecteion"
+        tools:layout="@layout/fragment_gender_selecteion" >
+        <action
+            android:id="@+id/action_genderSelecteionFragment_to_userAddressFragment"
+            app:destination="@id/userAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAddressFragment"
+        android:name="com.example.blooddonation.fragment.UserAddressFragment"
+        android:label="fragment_user_address"
+        tools:layout="@layout/fragment_user_address" >
+        <action
+            android:id="@+id/action_userAddressFragment_to_ageSelectionFragment"
+            app:destination="@id/ageSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageSelectionFragment"
+        android:name="com.example.blooddonation.fragment.AgeSelectionFragment"
+        android:label="fragment_age_selection"
+        tools:layout="@layout/fragment_age_selection" >
+        <action
+            android:id="@+id/action_ageSelectionFragment_to_uploadUserPhotoFragment"
+            app:destination="@id/uploadUserPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadUserPhotoFragment"
+        android:name="com.example.blooddonation.fragment.UploadUserPhotoFragment"
+        android:label="fragment_upload_user_photo"
+        tools:layout="@layout/fragment_upload_user_photo" >
+        <action
+            android:id="@+id/action_uploadUserPhotoFragment_to_donateBloodSplashFragment"
+            app:destination="@id/donateBloodSplashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donateBloodSplashFragment"
+        android:name="com.example.blooddonation.fragment.DonateBloodSplashFragment"
+        android:label="fragment_donate_blood_splash"
+        tools:layout="@layout/fragment_donate_blood_splash" >
+        <action
+            android:id="@+id/action_donateBloodSplashFragment_to_saveLifeSplashFragment"
+            app:destination="@id/saveLifeSplashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveLifeSplashFragment"
+        android:name="com.example.blooddonation.fragment.SaveLifeSplashFragment"
+        android:label="fragment_save_life_splash"
+        tools:layout="@layout/fragment_save_life_splash" >
+        <action
+            android:id="@+id/action_saveLifeSplashFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment" />
+    </fragment>
+</navigation>

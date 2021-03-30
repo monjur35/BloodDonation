@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Blood Donation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="abc_gmail_com">abc@gmail.com</string>
+    <string name="name">name</string>
+    <string name="username">Username</string>
+    <string name="textPhone">Please provide correct phone number.This information will be safe</string>
+    <string name="textAddress">Please provide address.This information will be safe</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="phone">Phone</string>
+    <string name="_01xxxxxxxxx">01XXXXXXXXX</string>
+    <string name="alternate_phone">Alternate Phone</string>
+    <string name="social">Social</string>
+    <string name="https">https://</string>
+    <string name="next">Next</string>
+    <string name="nearestClinic">Your blood group need to be accurate.If you don\'t know it,please contact to nearest clinic</string>
+    <string name="upper50"><![CDATA[<50]]></string>
+    <string name="down50"><![CDATA[>50]]></string>
+    <string name="keepFaith">Please don\'t use model or doll avatar.Keep faith in yourself.You\'re beautiful too</string>
+    <string name="habijabi">dfhhsdfhshdf fsdoffs ifsdijfs fsfsidf sfsdjf fs dfsdfsdfjsdpf fpsdof spdfspdf
+        dsf sd fpsfs  jp jdjfsj fsdpofjspd sdpft g ger ww fwefuwff fewfuewpfpfjefhohf
+    sfh dsfsdjfjffsdpfsdpfujdsfjsdfpjsdfupjfsdjfsdf awqqew weiritr tytry iuo iuyi  cxz bvc bbnn hj</string>
 </resources>

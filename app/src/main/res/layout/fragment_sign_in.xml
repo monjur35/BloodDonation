@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.SignInFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"
+            android:layout_marginTop="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="50dp"
+            android:id="@+id/layourrrrr"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:layout_marginLeft="10dp"
+                android:text="Username or Email" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_style"
+                android:hint="abc@gmail.com"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:layout_margin="10dp"
+                android:id="@+id/userNameOrEmailIdFromLogIn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Password" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_style"
+                android:hint="Password"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:inputType="textPassword"
+                android:id="@+id/passwordFromLogIn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nunito"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="110dp"
+                android:background="@drawable/button_bg"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/loginId" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:text="Forgot Password?"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_marginTop="50dp"
+                android:id="@+id/forgotPassText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:text="Don't have an account?"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:id="@+id/PassText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:text="Sign up"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:textColor="#505050"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:id="@+id/signUpText" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
