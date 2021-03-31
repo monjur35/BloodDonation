@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.BloodDonation" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimary">#C70100</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

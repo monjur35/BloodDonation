@@ -1,5 +1,6 @@
 package com.example.blooddonation.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,13 +12,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.blooddonation.HomeActivity;
 import com.example.blooddonation.R;
 import com.example.blooddonation.databinding.FragmentSignInBinding;
+import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 
 public class SignInFragment extends Fragment {
 
     FragmentSignInBinding binding;
+    ChipNavigationBar navigationBar;
 
     public SignInFragment() {
         // Required empty public constructor
@@ -29,6 +33,7 @@ public class SignInFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        binding=FragmentSignInBinding.inflate(inflater);
+       navigationBar=getActivity().findViewById(R.id.navigationBar);
        return binding.getRoot();
     }
 
@@ -39,6 +44,14 @@ public class SignInFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.action_signInFragment_to_signUp1Fragment);
+            }
+        });
+
+        binding.loginId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getActivity(), HomeActivity.class);
+                startActivity(i);
             }
         });
     }
