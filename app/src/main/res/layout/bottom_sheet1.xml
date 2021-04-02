@@ -12,6 +12,12 @@
     android:orientation="vertical"
     android:background="@drawable/roundbtm2">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="160dp"
+        android:background="@color/colorPrimaryRed"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabInbottomSheet_1"
         android:layout_width="match_parent"
