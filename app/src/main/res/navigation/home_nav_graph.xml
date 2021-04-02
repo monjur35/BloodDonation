@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.blooddonation.HomeFragment"
+        android:name="com.example.blooddonation.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.example.blooddonation.MapFragment"
+        android:name="com.example.blooddonation.fragment.MapFragment"
         android:label="fragment_map"
         tools:layout="@layout/fragment_map" />
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.example.blooddonation.NotificationFragment"
+        android:name="com.example.blooddonation.fragment.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.blooddonation.ProfileFragment"
+        android:name="com.example.blooddonation.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

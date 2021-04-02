@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    tools:context=".fragment.bottomsheet1Viewpager.InfoViewPagerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/aaaa"
+                android:text="@string/aaas"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aaaa"
+                android:id="@+id/bbb"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Badge"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#2B2B2B"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:id="@+id/shareId"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bbb"
+                android:id="@+id/ccc"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="100dp"
+                        android:id="@+id/urgentRequestCardId"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="#D5F0FF">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ambulance"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="13dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/urgentRequestCountId"
+                            android:background="@color/colorPrimaryRed"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Life saver"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="100dp"
+                        android:id="@+id/myRequestCardId"
+                        app:cardBackgroundColor="#D5F0FF">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/doctorplus"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="13dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/myRequestCountTextId"
+                            android:background="@color/colorPrimaryRed"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50 life"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="100dp"
+                        android:id="@+id/postRequestCardId"
+                        app:cardBackgroundColor="#D5F0FF">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/heraaat"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Protector"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressbarId"
+                android:layout_below="@+id/ccc"
+                android:max="100"
+                android:progress="70"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressTint="@color/colorPrimaryRed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressbarId"
+                android:id="@+id/a1111s"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="30"
+                    android:textColor="@color/colorPrimaryRed"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a11"
+                    android:text="@string/_30_days_until_you_can_donate_again" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/a1111s"
+               />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

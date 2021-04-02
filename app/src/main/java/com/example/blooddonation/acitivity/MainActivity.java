@@ -1,8 +1,10 @@
-package com.example.blooddonation;
+package com.example.blooddonation.acitivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.blooddonation.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,14 +1,16 @@
-package com.example.blooddonation;
+package com.example.blooddonation.acitivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
-import android.util.Log;
 
-import com.fxn.BubbleTabBar;
-import com.fxn.OnBubbleClickListener;
+import com.example.blooddonation.fragment.HomeFragment;
+import com.example.blooddonation.fragment.MapFragment;
+import com.example.blooddonation.fragment.NotificationFragment;
+import com.example.blooddonation.fragment.ProfileFragment;
+import com.example.blooddonation.R;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class HomeActivity extends AppCompatActivity {
